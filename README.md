@@ -106,10 +106,6 @@ java -cp out app.Main
 1 → GUI Mode
 2 → Console Mode
 
-📷 Screenshots
-
-(You can insert: GUI main screen, stats popup, console menu etc.)
-
 🧩 Future Improvements
 
 Cloud sync
