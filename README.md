@@ -1,4 +1,5 @@
 Smart Habit Tracker
+
 A complete habit tracking application built in Java featuring both:
 
 ✔ Graphical User Interface (GUI) using Swing
