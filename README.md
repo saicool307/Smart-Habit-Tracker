@@ -1,117 +1,128 @@
-Smart Habit Tracker
+**Smart Habit Tracker**
 
-A complete habit tracking application built in Java featuring both:
+A complete habit tracking system built in Java that supports both GUI (Swing) and Console (CLI) modes.
+This project demonstrates strong Object-Oriented Programming, modular design, file persistence, analytics, and user interface development.
 
-✔ Graphical User Interface (GUI) using Swing
-✔ Console (CLI) mode for terminal-based usage
+🚀 **Features**
 
-Designed with clean Object-Oriented Programming (OOP), modular package structure, and includes advanced features like reminders, leaderboard, statistics analysis, data persistence, and CSV export.
+✔ **Dual Mode Application**
 
-🚀 Features
-✓ Dual Mode Application
+   At startup, the user chooses:
+   
+   GUI Mode (interactive Swing interface)
+   
+   Console Mode (terminal-based habit tracker)
 
-Choose how you want to use the app:
+✔ **User Accounts**
 
-GUI Mode – Interactive Swing interface
+ Sign up / Login
+ 
+ Persistent user data (.ser file)
+ 
+ Multiple users supported
 
-Console Mode – Fully text-based CLI
+✔ **Habit Management**
 
-✓ User Account System
+ Add habits
+ 
+ Remove habits
+ 
+ Mark habits as completed
+ 
+ Track daily activity
+ 
+ Display streaks and total completions
 
-Sign up & login with username
+✔ **Smart Statistics & Analytics**
 
-Persistent storage using serialization
+ Completion rate (%)
+ 
+ Current streak
+ 
+ Longest streak (pattern detection)
+ 
+ Weekly progress trend graph (custom Swing chart)
+ 
+ Historical analysis
 
-✓ Habit Management
+✔ **Goal Tracking**
 
-Add new habits
+ Set:
+ 
+ Target streak
+ 
+ Target completion count
+ Automatic congratulations when goals are achieved 🎉
 
-Remove habits
+✔ **Leaderboard System**
 
-Mark habit as completed
+ Ranks all users based on total completions.
 
-Track streaks, completion history, and overall performance
+✔ **Reminder Engine**
+ 
+ Daily reminders
+ 
+ Custom time input (HH:mm)
+ 
+ Notification popup (Swing)
 
-✓ Smart Analytics
+ ✔ **CSV Export**
 
-Auto-calculated streaks
-
-Weekly activity graph (Swing line chart)
-
-Completion rate percentage
-
-Longest run detector
-
-Historical analysis
-
-✓ Goals & Targets
-
-Set:
-
-Target completion count
-
-Target streak days
-App automatically congratulates when user reaches the goal 🎉
-
-✓ Leaderboard
-
-Ranks all users based on:
-
-Total completions
-
-✓ Reminders Engine
-
-Daily reminder scheduling
-
-Custom times (HH:mm)
-
-Notification pop-ups
-
-✓ CSV Export
-
-Export all habits and stats to a .csv file:
+Exports habit statistics in a readable format:
 
 habit, streak, totalCompletions, totalDays, completionRate
 
-✓ Clean OOP Architecture
+✔ **Clean & Modular Architecture**
 
-Well-structured packages:
+Organized package structure:
 
 app
- ├── gui               (Swing UI)
- ├── console           (CLI mode)
- ├── user              (Models: Habit, History, UserProfile)
+ ├── gui               # Swing-based UI
+ ├── console           # Console (CLI) mode
+ ├── user              # Data models (Habit, UserProfile, History)
  ├── HabitTrackerManager
  ├── ProgressAnalyzer
  ├── ReminderEngine
  ├── util
- └── exception
+ └── exception         # Custom exceptions
+ 
+🖥️ **Technology Stack**
 
-🖥️ Technology Stack
-Area	Technology
-UI	Java Swing + AWT
-Console	Standard Java I/O
-Storage	Java Serialization (.ser)
-Language	Java 8+
-Charting	Custom Swing Graphics
-Build Tool	(manual javac / your choice)
-📦 Installation & Run
-1. Compile
+| Component | Technology             |
+| --------- | ---------------------- |
+| GUI       | Java Swing + AWT       |
+| Console   | Java Standard I/O      |
+| Language  | Java 8+                |
+| Storage   | Java Serialization     |
+| Graphics  | Custom Swing rendering |
+| Build     | javac / manual build   |
+
+📦 **Installation & Running**
+
+1️⃣ **Compile the project**
+
+Windows PowerShell:
+
 javac -d out (Get-ChildItem -Recurse -Filter *.java | ForEach-Object {$_.FullName})
 
-2. Run main launcher
-java -cp out app.Main
+macOS / Linux:
 
-3. Select mode
+javac -d out $(find src -name "*.java")
+
+2️⃣ **Run the main launcher**
+
 1 → GUI Mode
+
 2 → Console Mode
 
-🧩 Future Improvements
+📄 **Future Enhancements**
 
-Cloud sync
+Dark/light mode support
 
-Mobile companion app
+JavaFX UI rewrite
+
+Mobile version (Android)
 
 SQLite database storage
 
-Theme customization
+Cloud backup
